@@ -1,0 +1,120 @@
+[
+  {
+    "quesID": 1,
+    "quesStm": "Ai là tổng thống đắc cử của Mỹ (2017) ?",
+    "ansA": "Bush",
+    "ansB": "Trump",
+    "ansC": "Obama",
+    "ansD": "Jack",
+    "trueAns": "B",
+    "image_name": "trump.jpg",
+    "audio_name": ""
+  },
+
+  {
+    "quesID": 2,
+    "quesStm": "Bài hát này tên gì ?",
+    "ansA": "Dù Chỉ Là Mộng Mơ",
+    "ansB": "Xin Đừng Lặng Im",
+    "ansC": "Nơi Này Có Anh",
+    "ansD": "Ánh Nắng Của Anh",
+    "trueAns": "D",
+    "image_name": "",
+    "audio_name": "AnhNangCuaAnhDucPhuc.mp3"
+  },
+  {
+    "quesID": 3,
+     "quesStm": "Bài hát này tên gì ?",
+    "ansA": "Unforgettable",
+    "ansB": "That's What I Like ",
+    "ansC": "Everytime We Touch",
+    "ansD": "Pround Of You",
+    "trueAns": "C",
+    "image_name": "",
+    "audio_name": "Every-time-we-touch-Cascada.mp3"
+  },
+
+  {
+    "quesID": 4,
+    "quesStm": "Sông Bến Hải và sông Thạch Hãn nằm ở tỉnh nào?",
+    "ansA": "Quảng Bình",
+    "ansB": "Quảng Ninh",
+    "ansC": "Quảng Trị",
+    "ansD": "Quảng Ngãi",
+    "trueAns": "C",
+    "image_name": "",
+    "audio_name": ""
+  },
+
+  {
+    "quesID": 5,
+    "quesStm": "Ở SEAGAME 29 (Malaysia), Nguyễn Thị Ánh Viên giành được bao nhiêu huy chương?",
+    "ansA": "7 Vàng, 2 Bạc",
+    "ansB": "8 Vàng, 1 Bạc",
+    "ansC": "8 Vàng, 2 Bạc",
+    "ansD": "8 Vàng, 1 Bạc, 1 Đồng",
+    "trueAns": "C",
+    "image_name": "anhvien.jpg",
+    "audio_name": ""
+  },
+
+  {
+    "quesID": 6,
+    "quesStm": "Bài hát này tên gì ?",
+    "ansA": "Mãi yêu anh",
+    "ansB": "Yêu là thế đó",
+    "ansC": "Một chút yêu thôi",
+    "ansD": "Cho em gần anh thêm chút nữa",
+    "trueAns": "D",
+    "image_name": "",
+    "audio_name": "ChoEmGanAnhThemChutNua-HuongTram.mp3"
+  },
+
+ 
+  {
+    "quesID": 7,
+    "quesStm": "Bài hát này tên gì ?",
+    "ansA": "Side To Side",
+    "ansB": "Closer",
+    "ansC": "OAH",
+    "ansD": "Broccoli",
+    "trueAns": "C",
+    "image_name": "oah.jpg",
+    "audio_name": "Oah.mp3"
+  },
+  {
+    "quesID": 8,
+    "quesStm": "Các vua Hùng đặt quốc hiệu nước ta là gì?",
+    "ansA": "Đại Ngu",
+    "ansB": "Văn Lang",
+    "ansC": "Âu Lạc",
+    "ansD": "Đại Cồ Việt",
+    "trueAns": "B",
+    "image_name": "",
+    "audio_name": ""
+  },
+	{
+    "quesID": 9,
+    "quesStm": "Trong hệ mặt trời, bao nhiêu hành tinh có kích thước lớn hơn trái đất?",
+    "ansA": "7",
+    "ansB": "4",
+    "ansC": "5",
+    "ansD": "6",
+    "trueAns": "B",
+    "image_name": "",
+    "audio_name": ""
+  },
+
+  {
+    "quesID": 10,
+    "quesStm": " Bức tranh Sự Phán Quyết Cuối Cùng của Michelangelo được vẽ trên trần của ngôi điện nào?",
+    "ansA": "Sistine",
+    "ansB": "Xetiya ",
+    "ansC": "Fanicine",
+    "ansD": "Leptupun",
+    "trueAns": "A",
+    "image_name": "",
+    "audio_name": ""
+  },
+ 
+]

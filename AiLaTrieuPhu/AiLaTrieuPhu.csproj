@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{453C725D-CCBC-4D16-AA8D-3295F6ECF661}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AiLaTrieuPhu</RootNamespace>
+    <AssemblyName>AiLaTrieuPhu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>penguin_icon_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AiLaTrieuPhu.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Author.Designer.cs">
+      <DependentUpon>Form_Author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Chart.Designer.cs">
+      <DependentUpon>Form_Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Game.Designer.cs">
+      <DependentUpon>Form_Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperFunctions.cs" />
+    <Compile Include="NoFlickeringPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Question.cs" />
+    <Compile Include="Rec_Control.cs" />
+    <EmbeddedResource Include="Form_Author.resx">
+      <DependentUpon>Form_Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Chart.resx">
+      <DependentUpon>Form_Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Game.resx">
+      <DependentUpon>Form_Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_easy.json" />
+    <None Include="Resources\data_hard.json" />
+    <None Include="Resources\data_medium.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="penguin_icon_1.ico" />
+    <None Include="Resources\ava.PNG" />
+    <None Include="Resources\2-winner.jpg.png" />
+    <Content Include="Resources\images\backgrounds\penguin %281%29.jpg" />
+    <Content Include="Resources\images\backgrounds\penguin %282%29.jpg" />
+    <Content Include="Resources\images\backgrounds\penguin %283%29.jpg" />
+    <Content Include="Resources\images\backgrounds\penguin %284%29.jpg" />
+    <Content Include="Resources\images\backgrounds\penguin %285%29.jpg" />
+    <Content Include="Resources\images\backgrounds\penguin %286%29.jpg" />
+    <Content Include="Resources\images\backgrounds\penguin %287%29.jpg" />
+    <Content Include="Resources\images\backgrounds\penguin %288%29.jpg" />
+    <Content Include="Resources\images\backgrounds\penguin %289%29.jpg" />
+    <Content Include="Resources\images\buttons\btn-orange.png" />
+    <Content Include="Resources\images\buttons\btn_50_50_used.jpg" />
+    <Content Include="Resources\images\buttons\btn_audience_used.jpg" />
+    <Content Include="Resources\images\buttons\btn_changeQuestion_used.jpg" />
+    <Content Include="Resources\images\buttons\btn_darkblue.png" />
+    <Content Include="Resources\images\buttons\btn-blue.png" />
+    <Content Include="Resources\images\buttons\btn_50_50.jpg" />
+    <Content Include="Resources\images\buttons\btn_audience.jpg" />
+    <Content Include="Resources\images\buttons\btn_changeQuestion.jpg" />
+    <Content Include="Resources\images\buttons\btn_green.png" />
+    <Content Include="Resources\images\buttons\btn_green_chubby.png" />
+    <Content Include="Resources\images\buttons\btn_phoneCall.jpg" />
+    <Content Include="Resources\images\buttons\btn_phoneCall_used.jpg" />
+    <Content Include="Resources\images\buttons\btn_question.png" />
+    <Content Include="Resources\images\buttons\btn_blue_answer.png" />
+    <Content Include="Resources\images\buttons\btn_skip.png" />
+    <Content Include="Resources\images\buttons\do_i_know_u.jpg" />
+    <Content Include="Resources\images\buttons\green-a-md.png" />
+    <Content Include="Resources\images\buttons\green-b-md.png" />
+    <Content Include="Resources\images\buttons\green-c-md.png" />
+    <Content Include="Resources\images\buttons\green-d-md.png" />
+    <Content Include="Resources\images\buttons\Penguin_btn_3.png" />
+    <Content Include="Resources\images\buttons\studio.jpg" />
+    <Content Include="Resources\images\buttons\t30.png" />
+    <Content Include="Resources\images\buttons\time-over_1.png" />
+    <Content Include="Resources\images\screen\game_over_1.jpg" />
+    <Content Include="Resources\images\screen\LaiVanSam_1.jpg" />
+    <Content Include="Resources\images\screen\LaiVanSam_2.jpg" />
+    <Content Include="Resources\images\screen\listen_heart_music_.jpg" />
+    <Content Include="Resources\images\screen\stoped_game.jpg" />
+    <Content Include="Resources\images\timer\t0.png" />
+    <Content Include="Resources\images\timer\t1.png" />
+    <Content Include="Resources\images\timer\t10.png" />
+    <Content Include="Resources\images\timer\t11.png" />
+    <Content Include="Resources\images\timer\t12.png" />
+    <Content Include="Resources\images\timer\t13.png" />
+    <Content Include="Resources\images\timer\t14.png" />
+    <Content Include="Resources\images\timer\t15.png" />
+    <Content Include="Resources\images\timer\t16.png" />
+    <Content Include="Resources\images\timer\t17.png" />
+    <Content Include="Resources\images\timer\t18.png" />
+    <Content Include="Resources\images\timer\t19.png" />
+    <Content Include="Resources\images\timer\t2.png" />
+    <Content Include="Resources\images\timer\t20.png" />
+    <Content Include="Resources\images\timer\t21.png" />
+    <Content Include="Resources\images\timer\t22.png" />
+    <Content Include="Resources\images\timer\t23.png" />
+    <Content Include="Resources\images\timer\t24.png" />
+    <Content Include="Resources\images\timer\t25.png" />
+    <Content Include="Resources\images\timer\t26.png" />
+    <Content Include="Resources\images\timer\t27.png" />
+    <Content Include="Resources\images\timer\t28.png" />
+    <Content Include="Resources\images\timer\t29.png" />
+    <Content Include="Resources\images\timer\t3.png" />
+    <Content Include="Resources\images\timer\t30.png" />
+    <Content Include="Resources\images\timer\t4.png" />
+    <Content Include="Resources\images\timer\t5.png" />
+    <Content Include="Resources\images\timer\t6.png" />
+    <Content Include="Resources\images\timer\t7.png" />
+    <Content Include="Resources\images\timer\t8.png" />
+    <Content Include="Resources\images\timer\t9.png" />
+    <None Include="Resources\penguin_icon_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
